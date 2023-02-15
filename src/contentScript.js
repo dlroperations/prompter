@@ -45,7 +45,7 @@ const creator = () => {
   divContainer.appendChild(searchInputElement);
 
   const csvText = httpGet(
-    `https://raw.githubusercontent.com/f/awesome-chatgpt-prompts/main/prompts.csv?v=${Date.now()}`
+    `https://raw.githubusercontent.com/dlroperations/prompter/main/Prompter.csv?v=${Date.now()}`
   );
 
   const promptArray = csvToArray(csvText, '","');
