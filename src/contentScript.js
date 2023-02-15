@@ -45,7 +45,7 @@ const creator = () => {
   divContainer.appendChild(searchInputElement);
 
   const csvText = httpGet(
-    `https://raw.githubusercontent.com/dlroperations/prompter/main/Prompter.csv?v=${Date.now()}`
+    `https://raw.githubusercontent.com/dlroperations/prompter/main/public/promptersheet.csv?v=${Date.now()}`
   );
 
   const promptArray = csvToArray(csvText, '","');
